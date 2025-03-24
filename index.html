@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefólio Artístico</title>
+    <meta name="description" content="Portfólio artístico de Margarida Pedras Ricardo">
+    <title>Margarida Pedras Ricardo | Portfólio Artístico</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>O Meu Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Margarida Pedras Ricardo</h1>
+            <p>Artista Visual</p>
+            <nav>
+                <ul class="menu-nav">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <p>Aqui estarão as minhas obras.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Margarida Pedras Ricardo. Todos os direitos reservados.</p>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bem-vindo ao meu mundo artístico</h2>
+                <p>Explore minha coleção de obras criadas com paixão e dedicação.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2>Galeria</h2>
+                <div class="grid-galeria">
+                    <!-- Exemplo de item da galeria -->
+                    <div class="obra">
+                        <img src="obra1.jpg" alt="Título da Obra 1">
+                        <h3>Título da Obra 1</h3>
+                        <p>Técnica: Óleo sobre tela | Ano: 2024</p>
+                    </div>
+                    <!-- Adicione mais obras aqui -->
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="sobre-conteudo">
+                    <img src="retrato.jpg" alt="Retrato da artista" class="retrato">
+                    <div class="bio">
+                        <p>Texto sobre sua formação artística, inspirações, técnicas preferidas, etc.</p>
+                        <p>Formação acadêmica, exposições realizadas, prêmios, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form class="form-contacto">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="redes-sociais">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Behance</a>
+                    <a href="mailto:seu@email.com">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Margarida Pedras Ricardo. Todos os direitos reservados.</p>
+            <p class="voltar-topo"><a href="#inicio">Voltar ao topo</a></p>
+        </div>
     </footer>
 </body>
 </html>
