@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefólio Artístico</title>
+    <title>Portfólio Artístico</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +19,7 @@
                 <li><a href="bibliografia.html">Bibliografia</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
-                <li class="home"><a href="index.html">Inicio</a></li>
+                <li class="home"><a href="index.html">Início</a></li>
             </ul>
         </nav>
     </header>
@@ -22,9 +28,9 @@
         <section class="destaque">
             <h2>Em destaque</h2>
             <div class="conteudo">
-                <img src="A criatura.jpg" alt="Imagem em destaque" style="max-width: 100%; height: auto; display: block;">
+                <img class="A criatura.jpg" src="A criatura.jpg" alt="Imagem em destaque">
                 <div class="descricao">
-                    <p>Esta obra teve como foco o estudo de diversos pinceis e tecnicas, assim como o estudo de paisagem</p>
+                    <p>Descrição da imagem ou do projeto em destaque.</p>
                 </div>
             </div>
         </section>
@@ -33,5 +39,13 @@
     <footer>
         <p>&copy; 2025 Margarida Pedras Ricardo</p>
     </footer>
+  
+  <!-- O Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="Script.js"></script>
 </body>
 </html>
