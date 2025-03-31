@@ -68,8 +68,11 @@ body {
 }
 
 .conteudo img {
-    max-width: 300px;
-    border-radius: 10px;
+    width: 300px; /* Defina o tamanho desejado para o quadrado */
+    height: 300px; /* Igual à largura para formar um quadrado */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+    cursor: pointer; /* Indica que a imagem é clicável */
+    border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
 }
 
 /* Estilo do rodapé */
@@ -80,3 +83,9 @@ footer {
     background: #d3d3d3;
     width: 100%;
 }
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
