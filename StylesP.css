@@ -95,9 +95,28 @@ body::before {
     margin: 0;
   }
 
-  footer {
+  /* Estilo do rodapé */
+footer {
+    margin-top: 20px;
+    padding: 10px;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #666;
-  }
+    background: #F4B27E;
+    width: 100%;
+}
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
