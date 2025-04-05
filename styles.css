@@ -17,9 +17,9 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden; /* Garante que o fundo não ultrapasse os limites */
-}
-
-body::before {
+  }
+  
+  body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -32,42 +32,43 @@ body::before {
     filter: blur(8px); /* Aplica o desfoque */
     z-index: -1; /* Coloca o fundo atrás do conteúdo */
     transform: scale(1.1); /* Opcional: aumenta ligeiramente a imagem para evitar bordas visíveis */
-}
-
-/* Estilo do menu de navegação */
-.menu {
-    background: #d3d3d3;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.menu ul li {
-    background: #b3b3b3;
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.menu ul .home {
-    background: white;
-}
-
+  }
+  
+  
+    header {
+      background-color: #FF68AD;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      background: #FFE9C4;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: black;
+    }
+  
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+  
 /* Estilo do container principal */
 .container {
-    background: white;
+    background: #3C48AB;
     width: 80%;
     padding: 20px;
     border-radius: 10px;
@@ -99,7 +100,7 @@ footer {
     margin-top: 20px;
     padding: 10px;
     text-align: center;
-    background: #d3d3d3;
+    background: #F4B27E;
     width: 100%;
 }
 .conteudo {
