@@ -1,24 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.getElementById("myModal");
-    const img = document.querySelector(".conteudo img");
-    const modalImg = document.getElementById("img01");
-    const closeBtn = document.querySelector(".close");
-
-    img.addEventListener("click", () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
-    });
-
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
 document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("myModal");
     var img = document.getElementById("imgDestacada");
