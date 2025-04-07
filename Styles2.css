@@ -1,0 +1,138 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Garante que o fundo não ultrapasse os limites */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Galáctia.jpg"); /* Caminho para a imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  filter: blur(8px); /* Aplica o desfoque */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+  transform: scale(1.1); /* Opcional: aumenta ligeiramente a imagem para evitar bordas visíveis */
+}
+
+
+  header {
+    background-color: #FF68AD;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    background: #FFE9C4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+  }
+
+  main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .projeto-box-1 {
+    background: #598FD8;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    box-shadow: 0 4px 10px #FF68AD;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .projeto-box-1 img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .projeto-box-2 {
+    background: #598FD8;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    box-shadow: 0 4px 10px #FF68AD;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .projeto-box-2 img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .descricao {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .descricao h3 {
+    margin: 0;
+  }
+
+  /* Estilo do rodapé */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background: #F4B27E;
+    width: 100%;
+}
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
