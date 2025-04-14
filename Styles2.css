@@ -60,79 +60,112 @@ body::before {
 
   main {
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    display: flex; /* Changed to flex to prevent grid conflicts */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
     justify-items: center;
   }
 
-  .projeto-box-1 {
-    background: #598FD8;
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-    height: 280px;
-    box-shadow: 0 4px 10px #FF68AD;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .projeto-box-1 img {
-    width: 40%;
-    object-fit: cover;
-  }
-
-  .projeto-box-2 {
-    background: #598FD8;
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-    height: 280px;
-    box-shadow: 0 4px 10px #FF68AD;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .projeto-box-2 img {
-    width: 40%;
-    object-fit: cover;
-  }
-
-  .descricao {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    flex: 1;
-  }
-
-  .descricao h3 {
-    margin: 0;
-  }
-
-  /* Estilo do rodapé */
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    background: #F4B27E;
-    width: 100%;
+.conteudo img {
+width: 300px; /* Defina o tamanho desejado para o quadrado */
+height: 300px; /* Igual à largura para formar um quadrado */
+object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+cursor: pointer; /* Indica que a imagem é clicável */
+border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
+}
+/*Estilo da grelha*/
+.grelha {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+  gap: 20px; /* Espaçamento entre as imagens */
+  padding: 20px;
+  justify-items: center; /* Centraliza as imagens horizontalmente */
 }
 
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+/* Estilo das imagens */
+.grelha img {
+  width: 200px; /* Largura fixa para formar um quadrado */
+  height: 200px; /* Altura igual à largura */
+  object-fit: cover; /* Garante que a imagem preencha o quadrado sem distorcer */
+  border-radius: 10px; /* Arredonda os cantos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  transition: transform 0.3s ease; /* Transição suave para hover */
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+/* Efeito ao passar o mouse */
+.grelha img:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+}
+/* Style for the main container */
+.projetos-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style for each project container */
+.projeto-container {
+  background-color: #3C48AB; /* Blue background */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Style for the project box */
+.projeto-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F4B27E; /* Light orange background */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.projeto-box:hover {
+  background-color: #FFE9C4; /* Lighter orange on hover */
+}
+
+.projeto-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Style for the project information */
+.projeto-info {
+  flex: 1;
+  color: white;
+}
+
+.projeto-info h3 {
+  margin-bottom: 10px;
+}
+
+.projeto-info p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Style for the image grid */
+.grelha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.grelha img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

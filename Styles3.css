@@ -80,8 +80,6 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   gap: 20px; /* Espaçamento entre as imagens */
   padding: 20px;
   justify-items: center; /* Centraliza as imagens horizontalmente */
-  max-width: 800px; /* Limit the width of the grid */
-  margin: 0 auto; /* Center the grid horizontally */
 }
 
 /* Estilo das imagens */
@@ -90,11 +88,43 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   height: 200px; /* Altura igual à largura */
   object-fit: cover; /* Garante que a imagem preencha o quadrado sem distorcer */
   border-radius: 10px; /* Arredonda os cantos */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  box-shadow: 0 4px 8px #FF68AD; /* Sombra opcional */
   transition: transform 0.3s ease; /* Transição suave para hover */
 }
 
 /* Efeito ao passar o mouse */
 .grelha img:hover {
   transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+}
+/* Style for the main gallery container */
+.galeria {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the image grid */
+.grelha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 15px;
+  padding: 15px;
+  justify-items: center;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Style for individual images */
+.grelha img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #FF68AD; /* Optional shadow */
+  transition: transform 0.3s ease;
+}
+
+.grelha img:hover {
+  transform: scale(1.05);
 }

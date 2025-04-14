@@ -60,9 +60,9 @@ body::before {
 
   main {
     padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    display: flex; /* Changed to flex to prevent grid conflicts */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
     justify-items: center;
   }
 
@@ -98,52 +98,42 @@ footer {
   background: #F4B27E;
   width: 100%;
 }
-.conteudo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body {
-  font-family: Arial, sans-serif;
-}
-/* Estilos para o modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
+
+/* Style for the bio section */
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+/* Style for the image and description */
+.imagem-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.modal-content img {
-  width: 100%;
-  height: auto;
+.imagem-bio img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+.descricao {
+    text-align: center;
+    color: white;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+/* Style for the contact information */
+.contact-info {
+    text-align: left;
+    color: white;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
 }
