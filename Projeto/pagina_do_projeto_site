@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Artístico</title>
+    <link rel="stylesheet" href="Styles3.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="bibliografia.html">Bibliografia</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li class="home"><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria">
+        <div class="grelha">
+            <img src="imagens/site inicio.png" alt="pág inicio sem cor">
+              <img src="imagens/site Bibliografia.png" alt="pág bibliografia sem cor">
+              <img src="imagens/site projetos.png" alt="site projetos sem cor">
+              <img src="imagens/site galeria.png" alt="site galeria sem cor">
+              <img src="imagens/página de projeto.png" alt="site projetos 2 sem cor">
+              <img src="imagens/site inicio cor.png" alt="site inicio com cor">
+              <img src="imagens/Bibliografia.png" alt="site bibliografia com cor">
+              <img src="imagens/projetos cor.png" alt="site projetos com cor">
+              <img src="imagens/Projeto.png" alt="site em grelha dentro de projetos com cor">
+              <img src="imagens/Galeria cor.png" alt="site galeria com cor">
+              <img src="imagens/Pop up cor.png" alt="pop up de imagem">
+        </div>
+    </main>
