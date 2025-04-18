@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +39,11 @@ body::before {
     background-color: #FF68AD;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    
   }
 
   nav ul {
@@ -101,6 +106,7 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 20px;
 }
 
@@ -110,9 +116,12 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px 0;
-  padding: 20px;
   width: 80%;
   max-width: 800px;
+}
+
+.projeto-container:hover {
+  background-color: #FF68AD; /* Lighter orange on hover */
 }
 
 /* Style for the project box */
@@ -121,13 +130,13 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   align-items: center;
   padding: 15px;
   border-radius: 10px;
-  background-color: #F4B27E; /* Light orange background */
+  background-color: #3C48AB; /* Light orange background */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .projeto-box:hover {
-  background-color: #FFE9C4; /* Lighter orange on hover */
+  background-color: #FF68AD; /* Lighter orange on hover */
 }
 
 .projeto-box img {
@@ -168,4 +177,28 @@ border-radius: 10px; /* Opcional: arredonda os cantos da imagem */
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.projeto-container {
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #FF68AD;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
