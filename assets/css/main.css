@@ -246,6 +246,23 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
+#capa-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#capa-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
